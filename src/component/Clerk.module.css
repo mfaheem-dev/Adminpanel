@@ -1,0 +1,42 @@
+.addButton {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+.addButton button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: auto; /* Important */
+}
+.tableSection{
+  margin: 30px 50px;
+
+}
+
+.tableSection table thead tr {
+  background-color: #1f1851 !important;
+  border-radius: 10px;
+}
+
+.tableSection table thead th {
+  background-color: transparent;
+  color: white;
+}
+/* media querise....... */
+@media (max-width: 480px) {
+  .addButton {
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .addButton button {
+    width: auto;      /* Full width nahi hogi */
+    min-width: 120px; /* Thori fixed width */
+    padding: 8px 16px;
+  }
+}

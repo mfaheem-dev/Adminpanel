@@ -1,0 +1,13 @@
+.appContent{
+  display: flex;
+}
+.headerFoter{
+  width: 100%;
+}
+@media (max-width:950px){
+
+  .appContent{
+    display:block;
+  }
+
+}

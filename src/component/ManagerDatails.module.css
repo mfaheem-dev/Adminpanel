@@ -1,0 +1,79 @@
+.container {
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* TOP BUTTON BAR */
+.topButtons {
+  background: #17075b;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  gap: 5px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* FORCE SMALL BUTTONS */
+.delete,
+.edit {
+  all: unset;              /* 🔥 removes old styles completely */
+  display: inline-block;
+  padding: 7px 28px;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* delete */
+.delete {
+  background: #ffb5b5;
+  color: red;
+}
+
+/* edit */
+.edit {
+  background: #1976d2;
+  color: #fff;
+}
+/* CARD */
+.card {
+  border: 1px solid #555;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+/* ROW */
+.row {
+  display: grid;
+  grid-template-columns: 18% 32% 18% 32%;
+  padding: 8px;
+  align-items: center;
+}
+
+.row:nth-child(even) {
+  background: #e5e5e8;
+}
+
+.row b {
+  font-size: 18px;
+}
+
+.row span {
+  font-weight: 600;
+}
+
+/* BACK BUTTON */
+.back {
+  margin-top: 10px;
+  float: right;
+  background: #17075b;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
