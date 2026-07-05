@@ -1,30 +1,27 @@
 const express = require("express");
 const cors = require("cors");
-const User = require("./models/User");
-
 require("dotenv").config();
-
 const connectDB = require("./config/db");
-
+const User = require("./models/User");
 const userRoutes = require("./routers/UserRouter");
+const employeeRoutes = require("./routers/EmployeeRoutes");
+const homeRoutes = require("./routers/homeRoutes");
+const expenditureRoutes = require("./routers/expenditureRoutes");
 
 const app = express();
 
-// Database Connect
-
+// Database
 connectDB();
 
 // Middleware
-
 app.use(cors());
-
 app.use(express.json());
 
-// User Routes
-
+// Routes
 app.use("/api/users", userRoutes);
-
-// Test Route
+app.use("/api/employees", employeeRoutes);
+app.use("/api/home", homeRoutes);
+app.use("/api/expenditures", expenditureRoutes);
 
 app.get("/api/test", (req, res) => {
   res.json({
